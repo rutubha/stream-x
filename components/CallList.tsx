@@ -64,7 +64,7 @@ const CallList: React.FC<CallListProps> = (props) => {
     };
 
     if (type === "recording") fetchRecordings();
-  }, [type, callRecordings]);
+  }, [type, callRecordings, toast]);
 
   const calls = getCalls();
   const noCallsMessage = getNoCallsMessage();
